@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アプリ図鑑</title>
+<meta name="description" content="個人で開発している iPhone / iPad アプリ9本の一覧とお問い合わせ窓口。">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16202e;
+    --muted: #5d6b7d;
+    --line: #e3e8ee;
+    --card: #f7f9fb;
+    --accent: #1b4f9c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1729;
+      --fg: #e8edf4;
+      --muted: #9aa8ba;
+      --line: #24334c;
+      --card: #16223a;
+      --accent: #7db1ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 .5rem; letter-spacing: .01em; }
+  .lead { color: var(--muted); margin: 0; }
+  h2 {
+    font-size: .95rem; letter-spacing: .08em; color: var(--muted);
+    margin: 2.75rem 0 1rem; font-weight: 600;
+  }
+  ul.apps { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+  ul.apps a {
+    display: block; padding: .95rem 1.1rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    text-decoration: none; color: inherit;
+  }
+  ul.apps a:hover, ul.apps a:focus { border-color: var(--accent); }
+  .name { font-weight: 600; }
+  .desc { color: var(--muted); font-size: .9rem; display: block; margin-top: .1rem; }
+  section.note {
+    margin-top: 3rem; padding: 1.25rem 1.35rem;
+    border: 1px solid var(--line); border-radius: 12px; background: var(--card);
+  }
+  section.note h2 { margin-top: 0; }
+  section.note p { margin: .6rem 0; font-size: .95rem; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>アプリ図鑑</h1>
+    <p class="lead">iPad だけから始めて、Mac も活用したアプリ開発にも挑戦中です。<br>
+    これまでに公開した9本をまとめました。</p>
+  </header>
+
+  <h2>記録する</h2>
+  <ul class="apps">
+    <li><a href="https://apps.apple.com/jp/app/id6757196769">
+      <span class="name">My日記</span>
+      <span class="desc">シンプルな日記アプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6757731650">
+      <span class="name">お年玉・プレゼント記録</span>
+      <span class="desc">誰にいくら渡したかを記録するアプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6758040665">
+      <span class="name">家計と個人の財務管理</span>
+      <span class="desc">家計と資産を一元管理するアプリ</span></a></li>
+  </ul>
+
+  <h2>段取りする</h2>
+  <ul class="apps">
+    <li><a href="https://apps.apple.com/jp/app/id6757105415">
+      <span class="name">献立プランナー</span>
+      <span class="desc">レシピを登録し日々の献立を立てやすくするアプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6762625500">
+      <span class="name">TaskFlow</span>
+      <span class="desc">タスクと時間軸をまとめて管理するアプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6771660347">
+      <span class="name">プロンプトプランター</span>
+      <span class="desc">AIへの指示文を保存・整理するアプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6795068850">
+      <span class="name">ライフプラン設計図</span>
+      <span class="desc">100歳までの資産推移を描くアプリ</span></a></li>
+  </ul>
+
+  <h2>楽しむ・出かける</h2>
+  <ul class="apps">
+    <li><a href="https://apps.apple.com/jp/app/id6759249812">
+      <span class="name">TennisGear</span>
+      <span class="desc">テニスギア管理アプリ</span></a></li>
+    <li><a href="https://apps.apple.com/jp/app/id6760320706">
+      <span class="name">どのSA通る？</span>
+      <span class="desc">経路上で通過するSA・PAと設備がわかるアプリ</span></a></li>
+  </ul>
+
+  <section class="note">
+    <h2>データの扱いについて</h2>
+    <p>アプリに入力していただいたデータ（家計・資産・日記・タスクなど）は、
+    <strong>お使いの端末の中に保存されます。</strong>
+    当方のサーバーへ送信することはありません。アカウント登録も不要です。</p>
+    <p>一部のアプリでは広告を表示しており、その配信のために Google AdMob が
+    データを取得します。取得される項目はアプリごとに異なるため、
+    <strong>詳細は各アプリの App Store ページに記載のプライバシーポリシーをご確認ください。</strong></p>
+  </section>
+
+  <section class="note">
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告・ご要望・その他のお問い合わせは、
+    <a href="https://forms.gle/oqE4H5FuagMCJnbp8">お問い合わせフォーム</a>からお願いします。
+    全アプリ共通の窓口です。</p>
+    <p>どのアプリについてのご連絡かを書き添えていただけると、確認が早くなります。</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Yusuke Nakashima
+  </footer>
+
+</div>
+</body>
+</html>
