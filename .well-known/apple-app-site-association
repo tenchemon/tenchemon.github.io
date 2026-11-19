@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [ "D7J25X4F29.com.techemo.dono-sa-tooru" ],
+        "components": [
+          { "/": "/dono-sa/plan/*", "comment": "Break plan links from the app (どのSA通る？)" }
+        ]
+      }
+    ]
+  }
+}
